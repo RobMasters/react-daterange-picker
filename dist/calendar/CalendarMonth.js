@@ -100,8 +100,8 @@ var CalendarMonth = _react2.default.createClass({
 
     if (!hideSelection && value && _moment2.default.isMoment(value) && value.isSame(d, 'day')) {
       isSelectedDate = true;
-    } else if (!hideSelection && value && (0, _isMomentRange2.default)(value) && value.contains(d)) {
-      isInSelectedRange = true;
+    } else if (!hideSelection && value && (0, _isMomentRange2.default)(value)) {
+      isInSelectedRange = value.contains(d);
 
       isSelectedRangeStart = value.start.isSame(d, 'day');
       isSelectedRangeEnd = value.end.isSame(d, 'day');
