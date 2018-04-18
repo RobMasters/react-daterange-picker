@@ -10,6 +10,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _BemMixin = require('./utils/BemMixin');
 
 var _BemMixin2 = _interopRequireDefault(_BemMixin);
@@ -30,9 +34,9 @@ var PaginationArrow = _react2.default.createClass({
   mixins: [_BemMixin2.default, _reactAddonsPureRenderMixin2.default],
 
   propTypes: {
-    disabled: _react2.default.PropTypes.bool,
-    onTrigger: _react2.default.PropTypes.func,
-    direction: _react2.default.PropTypes.oneOf(['next', 'previous'])
+    disabled: _propTypes2.default.bool,
+    onTrigger: _propTypes2.default.func,
+    direction: _propTypes2.default.oneOf(['next', 'previous'])
   },
 
   getDefaultProps: function getDefaultProps() {

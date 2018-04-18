@@ -8,6 +8,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _BemMixin = require('../utils/BemMixin');
 
 var _BemMixin2 = _interopRequireDefault(_BemMixin);
@@ -26,8 +30,8 @@ var CalendarDatePeriod = _react2.default.createClass({
   mixins: [_BemMixin2.default, _PureRenderMixin2.default],
 
   propTypes: {
-    color: _react2.default.PropTypes.string,
-    period: _react2.default.PropTypes.string
+    color: _propTypes2.default.string,
+    period: _propTypes2.default.string
   },
 
   render: function render() {
