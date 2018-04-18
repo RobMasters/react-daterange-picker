@@ -8,6 +8,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _createReactClass = require('create-react-class');
+
+var _createReactClass2 = _interopRequireDefault(_createReactClass);
+
 var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
@@ -22,7 +26,7 @@ var _reactAddonsPureRenderMixin2 = _interopRequireDefault(_reactAddonsPureRender
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Legend = _react2.default.createClass({
+var Legend = (0, _createReactClass2.default)({
   displayName: 'Legend',
 
   mixins: [_BemMixin2.default, _reactAddonsPureRenderMixin2.default],

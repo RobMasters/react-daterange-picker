@@ -1,9 +1,10 @@
 /* eslint-disable react/no-multi-comp */
 
 import React from 'react';
+import createReactClass from 'create-react-class';
 
 
-const OFSCredit = React.createClass({
+const OFSCredit = createReactClass({
   render() {
     return (
       <div className="ofs-credit">
@@ -17,7 +18,7 @@ const OFSCredit = React.createClass({
 });
 
 
-const Footer = React.createClass({
+const Footer = createReactClass({
   render() {
     return (
       <footer className="footer">

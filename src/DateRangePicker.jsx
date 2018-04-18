@@ -1,4 +1,5 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import moment from 'moment';
 import {} from 'moment-range';
@@ -25,7 +26,7 @@ const absoluteMaximum = moment(new Date(8640000000000000 / 2)).startOf('day');
 
 function noop() {}
 
-const DateRangePicker = React.createClass({
+const DateRangePicker = createReactClass({
   mixins: [BemMixin, PureRenderMixin],
 
   propTypes: {

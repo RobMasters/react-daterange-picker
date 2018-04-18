@@ -1,10 +1,11 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import BemMixin from '../utils/BemMixin';
 import PureRenderMixin from '../utils/PureRenderMixin';
 
 
-const CalendarDatePeriod = React.createClass({
+const CalendarDatePeriod = createReactClass({
   mixins: [BemMixin, PureRenderMixin],
 
   propTypes: {

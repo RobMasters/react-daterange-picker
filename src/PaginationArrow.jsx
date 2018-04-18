@@ -1,11 +1,12 @@
 import React from 'react';
+import createReactClass from 'create-react-class';
 import PropTypes from 'prop-types';
 import BemMixin from './utils/BemMixin';
 
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 
 
-const PaginationArrow = React.createClass({
+const PaginationArrow = createReactClass({
   mixins: [BemMixin, PureRenderMixin],
 
   propTypes: {
